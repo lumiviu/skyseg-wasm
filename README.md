@@ -2,7 +2,7 @@
 
 WASM + ONNX Runtime Web implementation of U²-Net for sky segmentation.
 
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)]([https://huggingface.co](https://huggingface.co/voyagerfromeast/skyseg))
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/voyagerfromeast/skyseg)
 
 
 ## License
