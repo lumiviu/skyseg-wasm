@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Segmentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sky Seg</h1>
+        <p class="subtitle">Client-side AI Sky Segmentation using U²-Net</p>
+    </header>
+
+    <main>
+        <div id="drop-zone">
+            <input type="file" id="file-input" accept="image/*" class="hidden">
+            <p>Drag & drop an image here, or click to select</p>
+        </div>
+
+        <div id="preview-area" class="hidden">
+            <div id="preview-container">
+                <div class="canvas-wrapper">
+                    <span class="label">Original</span>
+                    <canvas id="original-canvas"></canvas>
+                </div>
+                <div class="canvas-wrapper">
+                    <span class="label">Mask</span>
+                    <canvas id="mask-canvas"></canvas>
+                </div>
+            </div>
+
+            <div id="controls">
+                <button id="reset-btn">Upload New Image</button>
+                <button id="download-btn">Download Mask</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <p id="loading-text">Loading Model...</p>
+        <div id="progress-container" class="hidden">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
